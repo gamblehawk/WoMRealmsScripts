@@ -28,5 +28,5 @@ function(perform)
 end
 )
 
-lib.help('build', 'global', 'set whether to recieve global chat channel\nThe chat realm is by default visible even when you are not in the chat realm.\nYou may disable this by typing /global off', '/global off  /global on');
+lib.help('general', 'global', 'set whether to recieve global chat channel\nThe chat realm is by default visible even when you are not in the chat realm.\nYou may disable this by typing /global off', '/global off  /global on');
 

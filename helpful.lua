@@ -70,7 +70,7 @@ function checkTip(perform)
 			sent[user].silenced = amSilenced
 			sent[user].restricted = amRestricted
 
-			print("Sending rep points to", user)
+			--print("Sending rep points to", user)
 			local message = "Rep: ".. commas(detail.repPoints)
 			if amSilenced then
 				message = message .. " &cSILENCED"
@@ -104,7 +104,7 @@ function checkTip(perform)
 		end
 			
 		perform("playermessage", tips[tip])
-		print("Sending tip number", tip, "/", #tips, "to", user, "=", tips[tip])
+		--print("Sending tip number", tip, "/", #tips, "to", user, "=", tips[tip])
 		sent[user].curTip = tip
 	end
 

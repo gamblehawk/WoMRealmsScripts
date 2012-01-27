@@ -46,7 +46,7 @@ function(perform)
 
 	perform("mapcopy", '.checkpoint_'..map, 0,0,0, 1024,1024,1024);
 
-	print("Spheroid from", x1, z1, y1, "to", x2, z2, y2, "in", tile, "perfect", perfect, "solid", solid);
+	--print("Spheroid from", x1, z1, y1, "to", x2, z2, y2, "in", tile, "perfect", perfect, "solid", solid);
 	local x, z, y = spheroid(perform, x1, z1, y1, x2, z2, y2, tile, perfect ~= 0, solid == 0)
 
 	perform("pbufpaste", x, z, y)
@@ -73,7 +73,7 @@ function spheroid(perform, x0, z0, y0, x1, z1, y1, tile, sphere, hollow)
 	local d = z1 - z0
 	local h = y1 - y0
 
-	print("Dimens:", w,d,h)
+	--print("Dimens:", w,d,h)
 
 	if w == 0 or d == 0 or h == 0 then
 		return
@@ -98,7 +98,7 @@ function spheroid(perform, x0, z0, y0, x1, z1, y1, tile, sphere, hollow)
 	local b = d / 2
 	local c = h / 2
 
-	print("Hmm, radii", a, b, c)
+	--print("Hmm, radii", a, b, c)
 	local aa, bb, cc = a * a, b * b, c * c
 
 	local s = w * d

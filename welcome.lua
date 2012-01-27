@@ -3,15 +3,15 @@ local lib = register("welcome")
 
 lib:hook("loggedin",
 function()
-	print("Got login event for", lib.detail.username)
+	--print("Got login event for", lib.detail.username)
 	if lib.detail.banned and lib.detail.banned > 0 then
-		print("Normal Ban:", lib.detail.banned);
+		--print("Normal Ban:", lib.detail.banned);
 		return false, "You are banned"
 	end
 
 	local ipban = tonumber(globaldata("ipban-"..lib.detail.ip));
 	if (ipban and ipban > os.time()) then
-		print("IP Ban:", ipban);
+		--print("IP Ban:", ipban);
 		return false, "You are banned"
 	end
 end,

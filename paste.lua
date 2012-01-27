@@ -22,7 +22,7 @@ function(perform)
 	local map = detail.mapFile:sub(5)
 
 	perform("getpoints", "paste from", detail.parameter..":"..map)
-	print("MapFile =", detail.mapFile)
+	--print("MapFile =", detail.mapFile)
 
 end
 )

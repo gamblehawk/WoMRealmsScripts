@@ -44,4 +44,4 @@ function(perform)
 end
 )
 
-lib.help('moderate', 'grant', 'grant users to build in you realm\nLevels: restrict, none, build, advanced, admin', '/grant USER LEVEL')
+lib.help('moderate', 'grant', 'grant users to build in your realm\nLevels: restrict, none, build, advanced, admin', '/grant USER LEVEL')

@@ -22,7 +22,7 @@ function(perform)
 	local detail = lib.detail
 
 	local tile = lib.tile(detail.parameter)
-	print("/place tile", tile)
+	--print("/place tile", tile)
 	perform("placetile", math.floor(detail.playerX / 32), math.floor(detail.playerZ / 32), math.floor(detail.playerY / 32) - 2, tile)
 end
 )

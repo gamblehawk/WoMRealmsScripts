@@ -36,3 +36,5 @@ end, function(perform)
 		perform("playermessage", "Disabled custom tag");
 	end
 end)
+
+lib.help('general', 'tag', 'give yourself a funky tag', '/tag I am cool')

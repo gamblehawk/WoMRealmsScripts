@@ -34,14 +34,13 @@ lib:hook("placed",
 function()
 	local detail = lib.detail
 
---	if detail.mapFile == "maps/chat" and detail.userLevel < 5 and detail.adminLevel < 1 then
 	if detail.mapFile == "maps/chat" and detail.adminLevel < 2 and detail.username ~= detail.mapOwner then
 		return false, "You can't build on chat realm, type &f/home"
 	end
 	if string.sub(detail.mapFile, 1, 12) == "maps/museum+" then
 		local allowed = lib:perms("Build")
 		if allowed == false then
-			return false, "This is a museum"
+		return false, "This is a museum"
 		end
 	end
 

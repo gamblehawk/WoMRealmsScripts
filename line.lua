@@ -36,7 +36,7 @@ function(perform)
 
 	perform("mapcopy", '.checkpoint_'..map, 0,0,0, 1024,1024,1024);
 
-	print("Line from", x1, z1, y1, "to", x2, z2, y2, "in", tile)
+	--print("Line from", x1, z1, y1, "to", x2, z2, y2, "in", tile)
 	drawLine(perform, x1, z1, y1, x2, z2, y2, tile)
 end
 )

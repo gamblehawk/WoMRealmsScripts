@@ -54,7 +54,7 @@ function ()
 	end
 end,
 function (perform)
-	print("sending mapchange to user:", username, "extra:", mapextra)
+	--print("sending mapchange to user:", username, "extra:", mapextra)
 	perform("mapchange", "user", username, mapextra)
 end)
 
@@ -73,7 +73,7 @@ function ()
 	end
 
 	local player, extra = split(detail.parameter, " ")
-	print("got", detail.parameter, player, extra)
+	--print("got", detail.parameter, player, extra)
 
 	username = exists(player)
 	userisme = (player == detail.username)
@@ -105,7 +105,7 @@ local contest = register("contest")
 
 contest:hook("commanded",
 function ()
-	if true then return false, "No Contest." end
+--	if true then return false, "No Contest." end
 	
 	local detail = contest.detail
 
@@ -125,9 +125,9 @@ function ()
 end,
 function (perform)
 	perform("mapchange", "user", username, "~contest")
-	perform("playermessage", "For more information: &5http://womjr.com/contest2")
+	perform("playermessage", "For more information: &5http://womjr.com/contest3")
 end)
 
-contest.help('general', 'contest', 'enters contest world', '/contest [USERNAME]')
+contest.help('general', 'contest', 'enters contest world\n-Details: &5http://womjr.com/contest3', '/contest [USERNAME]')
 
 
