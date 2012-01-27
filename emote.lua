@@ -79,4 +79,4 @@ end, function(perform)
 	end
 end)
 
-lib.help('general', 'emote', 'Create an emotion at the front of your username example\n - &5=) moujave: &fWhatchu talking bout Willis? ', '/emote')
+lib.help('general', 'emote', 'create an emotiicon at the front of your username example\n - &5=) moujave: &fWhatchu talking bout Willis? ', '/emote')

@@ -12,4 +12,4 @@ function (perform)
 	perform("unignore", unignoree);
 	perform("playermessage", "You have unignored " .. unignoree)
 end)
-lib.help('general', 'unignore', 'Stop ignoring an annoying player', '/unignore NAME')
+lib.help('general', 'unignore', 'stop ignoring an annoying player', '/unignore NAME')

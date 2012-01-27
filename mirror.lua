@@ -225,5 +225,5 @@ function(perform)
 end
 )
 
-lib.help('build', 'mirror', 'Set up a mirror area and mirror mode:\n/mirror set [r][x][y][z]\n- &bKeep current area but change mode:\n/mirror mode [r][x][y][z]\n- &bRemove mirror area:\n/mirror remove\n- &cThe modes:\n  r = reflective (flips x<->y coords)\n  x = mirror across x axis midline,\n  y = mirror across y axis midline,\n  z = mirror across z axis midline.', '/mirror set yz')
+lib.help('build', 'mirror', 'set up a mirror area and mirror mode:\n/mirror set [r][x][y][z]\n- &bkeep current area but change mode:\n/mirror mode [r][x][y][z]\n- &bremove mirror area:\n/mirror remove\n- &cthe modes:\n  r = reflective (flips x<->y coords)\n  x = mirror across x axis midline,\n  y = mirror across y axis midline,\n  z = mirror across z axis midline.', '/mirror set yz')
 

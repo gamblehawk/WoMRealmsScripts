@@ -113,5 +113,5 @@ function()
 end
 )
 
-lib.help('build', 'spleef', 'Set up or manage a spleef area\nOptions: set, remove, recopy, start, reset', '/spleef OPTION')
+lib.help('build', 'spleef', 'set up or manage a spleef area\nOptions: set, remove, recopy, start, reset', '/spleef OPTION')
 

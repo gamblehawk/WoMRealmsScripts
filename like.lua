@@ -12,7 +12,7 @@ local function like(perform)
 	perform("playermessage", "You have liked this realm")
 end
 lib:hook("commanded", nil, like)
-lib.help('general', 'like', 'Vote for this realm', '/like')
+lib.help('general', 'like', 'vote for this realm', '/like')
 register("love"):hook("commanded", nil, like)
 
 local lib2 = register("dislike")
@@ -31,5 +31,5 @@ lib2:hook("commanded", nil, dislike)
 register("unlike"):hook("commanded", nil, dislike)
 register("nolike"):hook("commanded", nil, dislike)
 register("hate"):hook("commanded", nil, dislike)
-lib2.help('general', 'dislike', 'Vote against this realm', '/dislike')
+lib2.help('general', 'dislike', 'vote against this realm', '/dislike')
 

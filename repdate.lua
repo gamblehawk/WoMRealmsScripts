@@ -18,4 +18,4 @@ end
 local lib = register("repdate")
 lib:hook("commanded", nil, repdate)
 
-lib.help('general', 'repdate', 'Informs the user of Reputation Update', '/repdate')
+lib.help('general', 'repdate', 'informs the user of Reputation Update', '/repdate')

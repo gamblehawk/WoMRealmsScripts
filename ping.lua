@@ -1,3 +1,4 @@
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 local function ping(perform)
 	perform("playermessage", "pong, lagtest sponsored by WoM")
 end

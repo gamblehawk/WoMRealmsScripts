@@ -15,4 +15,4 @@ function (perform)
 	perform("ignore", ignoree);
 	perform("playermessage", "You have ignored " .. ignoree)
 end)
-lib.help('general', 'ignore', 'Ignore an annoying player', '/ignore NAME')
+lib.help('general', 'ignore', 'ignore an annoying player', '/ignore NAME')

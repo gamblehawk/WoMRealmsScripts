@@ -1,3 +1,4 @@
+-- Copyright 2011, Norganna's AddOns Pty Ltd. All rights reserved.
 local function smp(perform)
 	perform("playermessage", "WoM SMP\n- &fcurrently open for surveyor+ or premium\n- &fyou &cneed &fto buy Official Minecraft to join!\n- &cIP = smp.womjr.com")
 end

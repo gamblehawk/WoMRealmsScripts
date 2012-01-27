@@ -101,5 +101,5 @@ function()
 end
 )
 
-lib.help('build', 'freebuild', 'Set up or manage a freebuild area\nOptions: set, remove, backup, restore', '/freebuild OPTION')
+lib.help('build', 'freebuild', 'set up or manage a freebuild area\nOptions: set, remove, backup, restore', '/freebuild OPTION')
 

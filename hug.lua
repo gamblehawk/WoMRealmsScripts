@@ -59,4 +59,4 @@ function(perform)
 end
 )
 
-lib.help('general', 'hug', 'Shows your eternal love to another player, or use 0 to deny or 1 to allow hugs', '/hug USER|0|1')
+lib.help('general', 'hug', 'shows your eternal love to another player, or use 0 to deny or 1 to allow hugs', '/hug USER|0|1')
